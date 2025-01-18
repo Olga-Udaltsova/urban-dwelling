@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link
+      href="styles/style.css"
+      media="screen and (min-width: 1200px)"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px) and (max-width: 1200px)"
+      href="styles/style_tablet.css"
+    />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/style_mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>URBAN DWELLING</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <nav>
+          <ul class="header_nav_menu">
+            <li class="header_nav_menu_item"><a href="#">Доставка и оплата</a></li>
+            <li class="header_nav_menu_item"><a href="#">Гарантия и возврат</a></li>
+          </ul>
+        </nav>
+        <button class="header_button">EN</button>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="main_menu">
+          <img src="/icons/Logo-header.svg" alt="Логотип компании" />
+
+          <div class="main_menu_nav_mobile">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="main_menu_nav_mobile_burger_checkbox"
+            />
+            <label for="burger-checkbox" class="main_menu_nav_mobile_burger_label"></label>
+            <ul class="main_menu_nav_mobile_burger_list">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Поиск</a></li>
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </div>
+
+          <nav>
+            <ul class="main_menu_nav">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">O компании</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="main_menu_buttons">
+            <div class="main_menu_buttons_search" id="search">
+              <input type="text" placeholder="Поиск" />
+              <img src="/icons/Search.svg" alt="Поиск" />
+            </div>
+
+            <button>
+              <img width="19" src="/icons/Cart.svg" alt="Корзина" />
+              <p class="main_menu_buttons_cart">3</p>
+              Корзина
+            </button>
+          </div>
+        </div>
+        <div class="main_products">
+          <h1>Результаты поиска</h1>
+          <div id="products"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer_site">
+          <img src="/icons/Logo-footer.svg" alt="Логотип компании" />
+          <p>
+            Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия
+            предоставления услуг
+          </p>
+        </div>
+        <div class="footer_contacts">
+          <div class="footer_contacts_item">
+            Адрес
+            <p>Текст, Текст, Текст</p>
+          </div>
+          <div class="footer_contacts_item">
+            Контакты
+            <p>Email: urban.dwelling@yandex.com</p>
+            <p>Телефон: 8 (999) 999-99-99</p>
+          </div>
+        </div>
+        <div class="footer_services">
+          Услуги
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Гарантия и возврат</a></li>
+          </ul>
+        </div>
+        <div class="footer_offer_table">
+          <ul>
+            <li><a href="#">Публичная оферта</a></li>
+            <li><a href="#">Политика персональных данных</a></li>
+          </ul>
+        </div>
+        <div class="footer_offer">
+          <ul>
+            <li><a href="#">Публичная оферта</a></li>
+            <li><a href="#">Политика персональных данных</a></li>
+          </ul>
+          <div class="footer_offer_payment">
+            <div class="footer_offer_cards">
+              <img src="/icons/Mir.svg" alt="Оплата картой Мир" />
+              <img src="/icons/Visa.svg" alt="Оплата картой Visa" />
+              <img src="/icons/MasterCard.svg" alt="Оплата картой MasterCard" />
+            </div>
+            <div class="footer_site_table">
+              <p>
+                Этот сайт защищен от спама службой reCAPTCHA Google. Политика
+                конфиденциальности/Условия предоставления услуг
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer_site_mobile">
+          <p>
+            Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия
+            предоставления услуг
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
